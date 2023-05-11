@@ -141,7 +141,6 @@ ul a:hover .underline{
     height: 2px;
     width: 0;
     border-radius: 8px;
-    margin-top: 0.25rem;
     transition: 0.3s;
 }
 
@@ -240,7 +239,9 @@ and (orientation: portrait) {
     .navbar-style {
         margin-top: 0;
         padding: 0;
-        border: 1px solid white; display: flex; justify-content: space-between; align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-link {

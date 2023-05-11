@@ -1,6 +1,6 @@
 <template>
 <!-- header background image -->
-  <div :style="{ 'backgroundImage': 'url(' + bar + ')' }" class="demo container-fluid" style="height: calc(100vh - 8px);">
+  <div :style="isMobile ? `backgroundImage: url(${barmobile})` : `backgroundImage: url(${bar})`" class="demo container-fluid" style="height: calc(100vh - 8px);">
     <div class="d-flex justify-content-center align-items-center" style="height: 100%">
       <!-- header text -->
         <div class="col-sm-12 d-flex flex-column justify-content-center align-items-center" id="blocDescription">
@@ -34,9 +34,11 @@
 
 <script>
 import { reactive,ref, toRefs } from 'vue'
+import windowWidthMixin from '@/mixins/windowWidthMixin'
 
     export default {
         name:'Homehead',
+        mixins: [windowWidthMixin],
         setup(){
             let barEtVerre;
             //Button default class
@@ -48,7 +50,8 @@ import { reactive,ref, toRefs } from 'vue'
                 try{
                 //Check availability
                     barEtVerre=reactive({
-                      bar:require('@/assets/img/entete.jpeg'),
+                      bar:require('@/assets/img/header-img.jpg'),
+                      barmobile:require('@/assets/img/header-mobile.jpg'),
                       monogram:require('@/assets/img/monogram.png'),
                       logonomono:require('@/assets/img/logo-navbar.png')
                     });
@@ -165,15 +168,18 @@ and (orientation: portrait) {
     }
 
     #logonomono,.myMonoLogo {
-        display: none
+        width: 80%;
     }
 
     #blocDescription {
-        padding-top: 250px
+        background: rgba(0,0,0,0.6);
+        padding: 1rem 0.5rem;
+        border-radius: 16px;
     }
 
     .demo {
-        background-size: auto 100%
+        background-size: cover;
+        background-position: center;
     }
 
     .myButtonMenu {

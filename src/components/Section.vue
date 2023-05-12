@@ -10,29 +10,9 @@
             <!-- Discover -->
             <Discover />
 
-            <div class="container">
-                <!-- Our Quality -->
-                <div class="row pt-5 pb-5">
-                    <div class="col-sm-7 mb-4 mb-lg-0 ">
-                        <div class="card cardInspi rounded-3 p-1 border-12  Computercard shadow">
+            <!-- About -->
+            <About />
 
-                            <img class="card-img-top w-150" :src="inspiPic" alt="Card image" >
-
-                            <div class="card-body rounded-bottom p-3 text-center cardInspi pt-1">
-                                <h5 class="card-title text-warning fw-bold mt-3 myh5">Nous concernant</h5>
-
-                                <p class="card-text text-white text-justify fs-6 textJustify">Le projet du bar Tic & Tac est né au détour d’une discussion en 2018. Il est le fruit de notre rencontre, Théo et Carl, sur les bancs de la fac. Littéralement indissociables, tout le monde nous appelait « Tic & Tac ». Nous avons donc naturellement choisi par la suite de nommer notre bar ainsi. Initialement prévu à Valence en Espagne, c’est bien à Lyon que nous avons finalement décidé d’ouvrir notre premier bar. Nous avons mis dans ce dernier les ingrédients résultant de tous les moments que nous avons partagés à deux comme nos nombreux voyages. C’est un bar à notre image, à celle de Tic & Tac.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm showOnPhone">
-                        <router-link class="nav-link nav-logo nav-item " to="/About">
-                            <h2 class="text-center fs-7 fw-bold p-3 yeltitle pt-3 pb-3 myH2"><ins>En savoir plus</ins></h2>
-                        </router-link>   
-                    </div>
-                </div>
-            </div>
         <!-- Our Quality -->
         </div>
     </div>
@@ -207,10 +187,11 @@
 import { reactive, toRefs, ref } from 'vue'
 import Offer from './Homepage/Offer.vue'
 import Discover from './Homepage/Discover.vue'
+import About from './Homepage/About.vue'
 
 export default {
     name:'Section',
-    components: { Offer, Discover },
+    components: { Offer, Discover, About },
     setup(){
         let photos=reactive({
             inspiPic:require('@/assets/img/inspiration_picture.jpg'),

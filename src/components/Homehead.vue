@@ -25,7 +25,7 @@
           </div>
 
           <div class="row my-2">
-            <a class="main-button" href="/carte.pdf" target="_blank">Notre carte</a> 
+            <Button to="/carte.pdf" label="Notre carte" blank />
           </div>
         </div>
       </div>
@@ -35,9 +35,11 @@
 <script>
 import { reactive,ref, toRefs } from 'vue'
 import windowWidthMixin from '@/mixins/windowWidthMixin'
+import Button from './UI/Button.vue'
 
     export default {
         name:'Homehead',
+        components: { Button },
         mixins: [windowWidthMixin],
         setup(){
             let barEtVerre;

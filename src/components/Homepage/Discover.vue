@@ -1,11 +1,11 @@
 <template>
-  <div v-if="isWideScreen" class="container" style="margin-top: -12rem">
+  <div v-if="!isTouch" class="container" style="margin-top: -12rem">
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
 
         <Title label="Nous découvrir"/>
 
-        <div class="discover-text" style="width: 75%;">
+        <div class="discover-text mt-4" style="width: 75%;">
           <p v-for="(text, index) in texts" :key="index" class="fs-6 text-light qualityParag textJustify" >
               {{ text }}
           </p>
@@ -46,22 +46,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-// .underline{
-//     background: #ff8000;
-//     height: 2px;
-//     width: 4rem;
-//     border-radius: 8px;
-// }
-// .discover-title h1{
-//     font-size: 1.5rem;
-//     font-weight: 600;
-//     color: #fff;
-//     margin-bottom: 1rem;
-//     z-index: 3;
-// }
-.discover-text{
-    margin-top: 2rem;
-}
-</style>

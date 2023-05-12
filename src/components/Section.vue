@@ -1,80 +1,28 @@
 <template >
-    <div class="bg-white">
-        <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#ffffff" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
+    <div class="bg-black">
+        <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#000" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
         <div class="arrow-down"></div>
+
         <div>
             <!-- Offer -->
-            <div class="d-flex justify-content-center">
-                <div class="p-5 text-center myH2">
-                    <h2 class=" fw-bold yeltitlelower myH2">Notre offre</h2>
-                </div>
-            </div>
-            <!-- Services -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm ">
-                            <div class="bg-black p-3 my-4 rounded1 shadow myCardsDiscover">
-                                <div class="row ">
-                                    <!--  --> <div class="col-sm-8 pt-3 mx-sm-3 text-yellow text-left  d-flex  align-items-center smPhone"> 
-                                                <fa :icon="['fas','fa-martini-glass']" class="fs-1 fa-black text-white bg-yellow rounded-circle p-3 marginDiscoverCardTitle " />
-                                                <h4 class="fs-1 paddingDiscoverCardTitle textJustify">Cocktails création</h4>
-                                    </div>
-                                    <!-- <div class="col-sm-12 text-white">
-                                        <p>Des cocktails uniques, introuvables ailleurs</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm ">
-                            <div class="bg-black p-3 my-4 rounded1 shadow myCardsDiscover ">
-                                <div class="row  ">
-                                    <!--  --> <div class="col-sm-8 pt-3 mx-sm-3 text-yellow text-left  d-flex  align-items-center smPhone"> 
-                                                <fa :icon="['fas','fa-wine-bottle']" class="fs-1 fa-black text-white bg-yellow rounded-circle p-3 marginDiscoverCardTitle " />
-                                                <h4 class="fs-1 paddingDiscoverCardTitle textJustify">Liqueurs maison</h4>
-                                            </div>
-                                    <!-- <div class="col-sm-12 text-white">
-                                        <p>De tous styles pour tous les amateurs de mousse</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm ">
-                            <div class="bg-black p-3 my-4 rounded1 shadow myCardsDiscover">
-                                <div class="row ">
-                                    <!--  --> <div class="col-sm-8 pt-3 mx-sm-3 text-yellow text-center  d-flex  align-items-center smPhone"> 
-                                                <fa :icon="['fas','fa-beer-mug-empty']" class="fs-1 fa-black p-3 text-white bg-yellow rounded-circle p-3 marginDiscoverCardTitle " />
-                                                <h4 class="fs-1 paddingDiscoverCardTitle textJustify">Bières locales</h4>
-                                            </div>
-                                    <!-- <div class="col-sm-12 text-white">
-                                        <p>De tous styles pour tous les amateurs de mousse</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm ">
-                            <div class="bg-black p-3 my-4 rounded1 shadow myCardsDiscover">
-                                <div class="row ">
-                                    <!--  --> <div class="col-sm-8 pt-3 mx-sm-3 text-yellow text-center  d-flex  align-items-center smPhone"> 
-                                                <fa :icon="['fas','cheese']" class="fs-1 fa-black text-white bg-yellow rounded-circle p-3 marginDiscoverCardTitle " />
-                                                <h4 class="fs-1 paddingDiscoverCardTitle textJustify">Planches régionales</h4>
-                                            </div>
-                                    <!-- <div class="col-sm-12 text-white">
-                                        <p>Des planches variées pour tous les plaisirs</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            <!-- Services -->
-            <!-- Our Quality -->
+            <Offer />
+
+            <!-- Discover -->
+            <Discover />
+
+            <div class="container">
+                <!-- Our Quality -->
                 <div class="row pt-5 pb-5">
-                    <div class="col-sm mb-4 mb-lg-0 ">
+                    <div class="col-sm-7 mb-4 mb-lg-0 ">
                         <div class="card cardInspi rounded-3 p-1 border-12  Computercard shadow">
-                        <img class="card-img-top w-150" :src="inspiPic" alt="Card image" >
-                        <div class="card-body rounded-bottom p-3 text-center cardInspi pt-1">
-                            <h5 class="card-title text-warning fw-bold mt-3 myh5">Nous concernant</h5>
-                            <p class="card-text text-white text-justify fs-6 textJustify">Le projet du bar Tic & Tac est né au détour d’une discussion en 2018. Il est le fruit de notre rencontre, Théo et Carl, sur les bancs de la fac. Littéralement indissociables, tout le monde nous appelait « Tic & Tac ». Nous avons donc naturellement choisi par la suite de nommer notre bar ainsi. Initialement prévu à Valence en Espagne, c’est bien à Lyon que nous avons finalement décidé d’ouvrir notre premier bar. Nous avons mis dans ce dernier les ingrédients résultant de tous les moments que nous avons partagés à deux comme nos nombreux voyages. C’est un bar à notre image, à celle de Tic & Tac.</p>
-                        </div>
+
+                            <img class="card-img-top w-150" :src="inspiPic" alt="Card image" >
+
+                            <div class="card-body rounded-bottom p-3 text-center cardInspi pt-1">
+                                <h5 class="card-title text-warning fw-bold mt-3 myh5">Nous concernant</h5>
+
+                                <p class="card-text text-white text-justify fs-6 textJustify">Le projet du bar Tic & Tac est né au détour d’une discussion en 2018. Il est le fruit de notre rencontre, Théo et Carl, sur les bancs de la fac. Littéralement indissociables, tout le monde nous appelait « Tic & Tac ». Nous avons donc naturellement choisi par la suite de nommer notre bar ainsi. Initialement prévu à Valence en Espagne, c’est bien à Lyon que nous avons finalement décidé d’ouvrir notre premier bar. Nous avons mis dans ce dernier les ingrédients résultant de tous les moments que nous avons partagés à deux comme nos nombreux voyages. C’est un bar à notre image, à celle de Tic & Tac.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -82,24 +30,10 @@
                         <router-link class="nav-link nav-logo nav-item " to="/About">
                             <h2 class="text-center fs-7 fw-bold p-3 yeltitle pt-3 pb-3 myH2"><ins>En savoir plus</ins></h2>
                         </router-link>   
-                    </div> 
-                    <div class="col-sm showOnPC">
-                        <h2 class="text-center fw-bold p-3 yeltitle pt-5 pb-5"><span class="text-warning">.</span> Nous découvrir <span class="text-warning">.</span></h2>
-                
-                        <p class="fs-5 text-light qualityParag textJustify" >
-                            Le bar Tic & Tac est un bar à cocktails et bières situé au cœur de la place Jules Guesdes dans le septième arrondissement de Lyon. Nous aurons le plaisir de vous accueillir dans un lieu chaleureux disposant de deux salles aux ambiances complètement différentes.<br><br>
-
-                            Le bar Tic & Tac propose une large gamme de cocktails classiques et originaux dont la plupart sont réalisés à partir de liqueurs maison. Un de ces cocktails, l’Élixir de jouvence, a été élaboré en exclusivité pour le bar Tic & Tac par un Meilleur Ouvrier de France barman.<br><br>
-
-                            Le bar Tic & Tac, c’est également un important choix de bières artisanales et régionales. Que ce soit en pression ou en bouteille, vous trouverez sans aucun doute une bière qui saura satisfaire vos papilles.<br><br>
-
-                            En cas de creux, Tic & Tac a également pensé à vous. Vous pourrez déguster de copieuses planches à partager élaborées à base de charcuteries, de fromages et de tartinades locaux.<br><br>
-
-                            Dès les premiers beaux jours, vous pourrez également profiter de notre belle terrasse.</p>
                     </div>
                 </div>
             </div>
-            <!-- Our Quality -->
+        <!-- Our Quality -->
         </div>
     </div>
     <!-- Our Products -->
@@ -155,7 +89,7 @@
                                         </div>
                                     </div>
                                 </div>
-                             </div>
+                            </div>
                             <div class="col cardCarrou">
                                 
                                 <div class="row row-cols-1 row-cols-md-2">
@@ -270,33 +204,28 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
-    export default {
-        name:'Section',
-        setup(){
-            let photos;
-            try{
-                //Check availability
-                    photos=reactive({
-                        inspiPic:require('@/assets/img/inspiration_picture.jpg'),
-                        Cocktail1:require('@/assets/img/Cocktail1.jpeg'),
-                        Cocktail2:require('@/assets/img/Cocktail2.jpeg'),
-                        Cocktail4:require('@/assets/img/Cocktail4.jpeg'),
-                        Cocktail5:require('@/assets/img/Cocktail5.jpeg'),
-                        Cocktail6:require('@/assets/img/Cocktail6.jpeg'),
-                        CocktailNull:require('@/assets/img/CocktailNull.jpeg'),
-                        fondcarousel:require('@/assets/img/cocktail-fond-plein.jpg')
-                    });
-                }
-                catch(error){
-                console.error(error);
-                }
-            
-                return{
-                ...toRefs(photos),
-                }
-        }
+import { reactive, toRefs, ref } from 'vue'
+import Offer from './Homepage/Offer.vue'
+import Discover from './Homepage/Discover.vue'
+
+export default {
+    name:'Section',
+    components: { Offer, Discover },
+    setup(){
+        let photos=reactive({
+            inspiPic:require('@/assets/img/inspiration_picture.jpg'),
+            Cocktail1:require('@/assets/img/Cocktail1.jpeg'),
+            Cocktail2:require('@/assets/img/Cocktail2.jpeg'),
+            Cocktail4:require('@/assets/img/Cocktail4.jpeg'),
+            Cocktail5:require('@/assets/img/Cocktail5.jpeg'),
+            Cocktail6:require('@/assets/img/Cocktail6.jpeg'),
+            CocktailNull:require('@/assets/img/CocktailNull.jpeg'),
+            fondcarousel:require('@/assets/img/cocktail-fond-plein.jpg'),
+        })
+
+        return {...toRefs(photos)}
     }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -308,18 +237,19 @@ import { reactive, toRefs } from 'vue'
 .mt-global{
     padding-top: 500px;
 }
+
 .yeltitle{
-   color: #F6A424;  
-   font-size:3.5em;
+    color: #F6A424;  
+    font-size:3.5em;
 }
 
 .yeltitlelower{
-   color: #F6A424;  
-   font-size:2.5em;
+    color: #F6A424;  
+    font-size:2.5em;
 }
 .rc{
-   font-size: 100px;
-   color: #F6A424;  
+    font-size: 100px;
+    color: #F6A424;  
 }
 .yellow-hover:hover{
     background-color:#F6A424 ;
@@ -332,8 +262,7 @@ import { reactive, toRefs } from 'vue'
 }
 
 .smPhone{
-    
-        justify-content:center;
+    justify-content:center;
 }
 .text-2A{
     color: #0000;
@@ -345,22 +274,22 @@ import { reactive, toRefs } from 'vue'
     color: #F6A424;
 }
 .Computercard{
-        width: 60%;
-        margin-left:19%;
-        background-color: black;
-        border-color : #F6A424;
-        text-align: justify;
-  text-justify: inter-word;
+    width: 60%;
+    margin-left:19%;
+    background-color: black;
+    border-color : #F6A424;
+    text-align: justify;
+    text-justify: inter-word;
     
 }
 .card{
-        border: solid 3px #F6A424!important;
-        border-color : #F6A424!important;}
+    border: solid 3px #F6A424!important;
+    border-color : #F6A424!important;}
 
-.textJustify{
-    text-align: justify;
-  text-justify: inter-word;
-}
+// .textJustify{
+//     text-align: justify;
+//     text-justify: inter-word;
+// }
 ul li{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -377,13 +306,13 @@ ul li{
     color: #F6A424;
 }
 
-.qualityParag{
-    text-align: justify;
-}
+// .qualityParag{
+//     text-align: justify;
+// }
 
 
 .svg-down {
-    bottom: 0;
+    bottom: 8px;
     left: calc(50% - 96px);
     position: absolute;
     z-index: 5;
@@ -399,7 +328,7 @@ ul li{
     bottom: 36px;
     transform: translate(-50%, 0);
     z-index: 10;
-    background: url("../assets/icons/arrowDown.png") no-repeat center;
+    background: url("../assets/icons/arrowDownWhite.svg") no-repeat center;
     background-size: contain;
 }
 .myCardsDiscover{

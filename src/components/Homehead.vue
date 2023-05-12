@@ -1,6 +1,6 @@
 <template>
 <!-- header background image -->
-  <div :style="isMobile ? `backgroundImage: url(${barmobile})` : `backgroundImage: url(${bar})`" class="demo container-fluid" style="height: calc(100vh - 8px);">
+  <div :style="isTouch ? `backgroundImage: url(${barmobile})` : `backgroundImage: url(${bar})`" class="demo container-fluid" style="height: calc(100vh - 16px);">
     <div class="d-flex justify-content-center align-items-center" style="height: 100%">
       <!-- header text -->
         <div class="col-sm-12 d-flex flex-column justify-content-center align-items-center" id="blocDescription">

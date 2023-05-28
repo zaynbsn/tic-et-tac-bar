@@ -1,9 +1,11 @@
 <template>
-  <div class="title">
-    <h1>{{ label.toUpperCase() }}</h1>
+  <div :class="centered ? 'centered' : ''">
+    <div class="title">
+      <h1>{{ label.toUpperCase() }}</h1>
+    </div>
+    
+    <div class="underline"></div>
   </div>
-  
-  <div class="underline"></div>
 </template>
 
 <script>
@@ -13,6 +15,11 @@ export default {
     label: {
       type: String,
       required: true
+    },
+    centered: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
@@ -31,5 +38,12 @@ export default {
     height: 2px;
     width: 4rem;
     border-radius: 8px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

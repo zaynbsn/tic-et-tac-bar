@@ -17,7 +17,7 @@
   <div v-if="!isTouch" class="container offer-title-container d-flex flex-column justify-content-center align-items-center">
     <div class="offer-title d-flex flex-column justify-content-center align-items-center">
       <div class="offer-title-text d-flex flex-column justify-content-center align-items-center">
-        <Title label="Notre offre"/>
+        <Title label="Notre offre" centered />
 
         <p><span style="color: #ff8000">Offrez</span> vous les meilleurs produits <span style="color: #ff8000">locaux</span>, et <span style="color: #ff8000">savourez</span> les créations et liqueurs maison faîtes avec <span style="color: #ff8000">soin.</span></p>
       </div>

@@ -1,9 +1,9 @@
 <template>
-  <div class="container mt-5">
+  <div class="container my-5">
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
         
-        <Title label="Nous concernant"/>
+        <Title label="Nous concernant" centered/>
         
         <div class="about-text mt-4" style="width: 75%;">
           <p v-for="(text, index) in texts" :key="index" class="fs-6 text-light qualityParag textJustify" >
@@ -21,7 +21,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>

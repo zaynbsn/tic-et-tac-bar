@@ -13,129 +13,13 @@
             <!-- About -->
             <About />
 
+            <!-- Cocktails -->
+            <Cocktails />
+
         <!-- Our Quality -->
         </div>
     </div>
-    <!-- Our Products -->
-    <div  class="bg-dark h-small text-center">
-        <div class="container p-2">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active p-3">
-                        <div class="row row-cols-1 row-cols-md-3 g-4 showOnPC">
-                            <div class="col cardCarrou">
-                                <div class="card cardCarrou">
-                                <img :src="Cocktail1"  class="card-img-top" alt="...">
-                                
-                                </div>
-                            </div>
-                            <div class="col cardCarrou">
-                                <div class="card cardCarrou">
-                                <img :src="Cocktail2"  class="card-img-top" alt="...">
-                                
-                                </div>
-                            </div>
-                            <div class="col cardCarrou">
-                                <div class="card cardCarrou">
-                                <img :src="Cocktail4"  class="card-img-top" alt="...">
-                                
-                                </div>
-                            </div>
-                            <div class="col cardCarrou">
-                                <div class="card cardCarrou">
-                                <img :src="Cocktail5"  class="card-img-top" alt="...">
-                                
-                                </div>
-                            </div>
-                            <div class="col cardCarrou">
-                                <div class="card cardCarrou">
-                                <img :src="Cocktail6"  class="card-img-top" alt="...">
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-4 g-4 showOnPhone">
-                            <div class="col cardCarrou">
-                                <div class="row row-cols-1 row-cols-md-2">
-                                    
-                                    <div class="col cardCarrou2">
-                                        <div class="card ">
-                                        <img :src="Cocktail1"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="col cardCarrou2">
-                                        <div class="card ">
-                                        <img :src="Cocktail2"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col cardCarrou">
-                                
-                                <div class="row row-cols-1 row-cols-md-2">
-                                    <div class="col cardCarrou2">
-                                        <div class="card ">
-                                        <img :src="Cocktail4"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="col cardCarrou2">
-                                        <div class="card ">
-                                        <img :src="Cocktail5"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item p-3">
-                        <div class="row row-cols-1 row-cols-md-4 g-4 showOnPhone">
-                            <div class="col cardCarrou">
-                                <div class="row row-cols-1 row-cols-md-2">
-                                    
-                                    <div class="col cardCarrou2">
-                                        <div class="card ">
-                                        <img :src="Cocktail6"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="col cardCarrou2">
-                                        <div class=" ">
-                                        <img :src="CocktailNull"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                             </div>
-                            <div class="col cardCarrou">
-                                
-                                <div class="row row-cols-1 row-cols-md-2">
-                                    <div class="col cardCarrou2">
-                                        <div class=" ">
-                                        <img :src="CocktailNull"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                    <div class="col cardCarrou2">
-                                        <div class=" ">
-                                        <img :src="CocktailNull"  class="card-img-top" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
 
-                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                    <span class="visually-hidden">Précedent</span>
-                </button>
-                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Suivant</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Our Products -->
     <!-- Coffee Rates -->
     <div class="container-fluid bg-black pt-global">
         <div class="container">
@@ -144,7 +28,7 @@
                 <div class="col-sm mb-4 text-white heightAvis">
                      <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
                       <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-                        <p class="text-secondary text-white">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables. Je recommande l'adresse !!</p>
+                        <p class="text-secondary text-white">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables.</p>
                         <hr>
                         <div class="row">
                             <div class="col"><p class="fw-bold text-white">Maxime M</p></div>
@@ -176,11 +60,11 @@
         </div>
     </div>
     <!-- Coffee Rates -->
-<div class="container-fluid bg-black pt-global mapBar">
-        <div class="container pb-3">
-            <iframe class="h-100 w-100 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.715939471307!2d4.8387141!3d45.7475576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7d9e819e2b%3A0xcf8fb327d3b9188a!2sTIC%20%26%20TAC%20BAR!5e0!3m2!1sen!2sfr!4v1682035826407!5m2!1sen!2sfr"    allowfullscreen="" loading="lazy"></iframe>
-        </div>
-</div>          
+    <div class="container-fluid bg-black pt-global mapBar">
+            <div class="container pb-3">
+                <iframe class="h-100 w-100 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.715939471307!2d4.8387141!3d45.7475576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7d9e819e2b%3A0xcf8fb327d3b9188a!2sTIC%20%26%20TAC%20BAR!5e0!3m2!1sen!2sfr!4v1682035826407!5m2!1sen!2sfr"    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    </div>
 </template>
 
 <script>
@@ -188,18 +72,20 @@ import { reactive, toRefs, ref } from 'vue'
 import Offer from './Homepage/Offer.vue'
 import Discover from './Homepage/Discover.vue'
 import About from './Homepage/About.vue'
+import Cocktails from './Homepage/Cocktails.vue'
 
 export default {
     name:'Section',
-    components: { Offer, Discover, About },
+    components: { Offer, Discover, About, Cocktails },
     setup(){
         let photos=reactive({
             inspiPic:require('@/assets/img/inspiration_picture.jpg'),
-            Cocktail1:require('@/assets/img/Cocktail1.jpeg'),
-            Cocktail2:require('@/assets/img/Cocktail2.jpeg'),
-            Cocktail4:require('@/assets/img/Cocktail4.jpeg'),
-            Cocktail5:require('@/assets/img/Cocktail5.jpeg'),
-            Cocktail6:require('@/assets/img/Cocktail6.jpeg'),
+            Cocktail1:require('@/assets/img/cocktail1.png'),
+            Cocktail2:require('@/assets/img/cocktail2.png'),
+            Cocktail3:require('@/assets/img/cocktail3.png'),
+            Cocktail4:require('@/assets/img/cocktail4.png'),
+            Cocktail5:require('@/assets/img/cocktail5.png'),
+            Cocktail6:require('@/assets/img/cocktail6.png'),
             CocktailNull:require('@/assets/img/CocktailNull.jpeg'),
             fondcarousel:require('@/assets/img/cocktail-fond-plein.jpg'),
         })
@@ -263,9 +149,10 @@ export default {
     text-justify: inter-word;
     
 }
-.card{
-    border: solid 3px #F6A424!important;
-    border-color : #F6A424!important;}
+// .card{
+//     border: solid 3px #F6A424!important;
+//     border-color : #F6A424!important;
+// }
 
 // .textJustify{
 //     text-align: justify;

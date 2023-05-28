@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
 
-        <Title label="Nous découvrir"/>
+        <Title label="Nous découvrir" centered />
 
         <div class="discover-text mt-4" style="width: 75%;">
           <p v-for="(text, index) in texts" :key="index" class="fs-6 text-light qualityParag textJustify" >

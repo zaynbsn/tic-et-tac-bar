@@ -134,7 +134,7 @@ export default {
   // border: 1px solid green;
 }
 .offer-title-text p{
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #fff;
   text-align: center;

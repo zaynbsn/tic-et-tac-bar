@@ -12,6 +12,21 @@ html{
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
-   url(./fonts/Roboto-Regular.ttf) format("truetype");
+  url(./fonts/Roboto-Regular.ttf) format("truetype");
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ebedef;
+  background: #000;
+  // background: #cccccc;
+}
+
+*::-webkit-scrollbar-thumb {
+  // background-color: #797579;
+  background-color: #ff8000;
+  border-radius: 20px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isTouch" class="container" style="margin-top: -12rem">
+  <div class="container mb-5" style="margin-top: -12rem">
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
 

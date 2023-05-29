@@ -8,7 +8,10 @@
             <Offer />
 
             <!-- Discover -->
-            <Discover />
+            <Discover v-if="!isTouch"/>
+
+            <!-- Illustrations -->
+            <Illustrations v-if="!isTouch"/>
 
             <!-- About -->
             <About />
@@ -26,8 +29,8 @@
             
             <div class="row  text-center pt-3">
                 <div class="col-sm mb-4 text-white heightAvis">
-                     <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
-                      <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
+                    <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
+                        <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
                         <p class="text-secondary text-white">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables.</p>
                         <hr>
                         <div class="row">
@@ -73,10 +76,13 @@ import Offer from './Homepage/Offer.vue'
 import Discover from './Homepage/Discover.vue'
 import About from './Homepage/About.vue'
 import Cocktails from './Homepage/Cocktails.vue'
+import Illustrations from './Homepage/Illustrations.vue'
+import windowWidthMixin from '@/mixins/windowWidthMixin'
 
 export default {
     name:'Section',
-    components: { Offer, Discover, About, Cocktails },
+    components: { Offer, Discover, About, Cocktails, Illustrations },
+    mixins: [windowWidthMixin],
     setup(){
         let photos=reactive({
             inspiPic:require('@/assets/img/inspiration_picture.jpg'),

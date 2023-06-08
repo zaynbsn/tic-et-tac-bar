@@ -1,13 +1,5 @@
 <template>
-    <div class="bg-yellow">
-         <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="p-5 text-center textCarreJaune">
-                    <h3 class="text-white">Du lundi au samedi de 16h30 à 00h30</h3>
-                </div>
-            </div>
-         </div>
-    </div>
+    
     <div class="bg-other ">
         <div class="container pt-3 myContainerToEnlarge">
             <div class="row text-white text-center mt-6 pt-3 myContainerToEnlarge">

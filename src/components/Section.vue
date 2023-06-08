@@ -24,38 +24,50 @@
     </div>
 
     <!-- Coffee Rates -->
-    <div class="container-fluid bg-black pt-global">
+    <div class="container-fluid pt-global mb-5" style="background-color: #99714a">
         <div class="container">
-            
-            <div class="row  text-center pt-3">
-                <div class="col-sm mb-4 text-white heightAvis">
-                    <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
-                        <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-                        <p class="text-secondary text-white">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col"><p class="fw-bold text-white">Maxime M</p></div>
+            <div class="row d-flex justify-content-center align-items-center py-4" style="height: fit-content">
+                <div class="col-sm text-white">
+                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
+                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
+                            Maxime M
                         </div>
+
+                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
+
+                        <p class="text-white" style="font-size: 0.85rem">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables.</p>
                     </div>
                 </div>
-                <div class="col-sm mb-4 text-white ">
-                     <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
-                      <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-                        <p class="text-secondary text-white">J’ai découvert ce bar par hasard et je peux que le conseiller !!
+                <div class="col-sm text-white">
+                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
+                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
+                            Robin B
+                        </div>
+
+                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
+
+                        <p class="text-white" style="font-size: 0.85rem">J’ai découvert ce bar par hasard et je peux que le conseiller !!
                             J’ai passé une super moment ! Et les cocktails sont excellents.</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col"><p class="fw-bold text-white">Robin B</p></div>
-                        </div>
                     </div>
                 </div>
-                <div class="col-sm mb-4 text-white ">
-                     <div class="shadow rounded1  p-5 mt-1 pt-2 pb-3 heightAvis text-white bg-dark">
-                      <h2 class="bg-yellow rounded-circle p-4 badge  fs-4 text-white mb-4"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-                        <p class="text-secondary text-white">Des barmans passionnés, des cocktails uniques parfaitement dosés, hésitez pas</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col"><p class="fw-bold text-white">Matisse L</p></div>
+                <div class="col-sm text-white">
+                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
+                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
+                            Anais T
+                        </div>
+
+                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
+
+                        <p class="text-white" style="font-size: 0.85rem">Des cocktails qui sortent de l'ordinaire, des barmans passionnés et soucieux de leur clientèle. Je reviendrai sans hésiter !</p>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="container">
+                        <div class="d-flex justify-content-center">
+                            <div class="pt-4 text-center">
+                                <h3 class="text-black fw-bold">Du lundi au samedi de 16h30 à 00h30</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +232,7 @@ ul li{
 }
 
 .heightAvis{
-    height:300px;
+    height:216px;
 }
 .card-title{
     color : #F6A424!important;

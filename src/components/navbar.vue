@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar d-flex justify-content-between navbar-expand-sm fixed-top navbar-light pt-3 transparent" v-bind:class=" { 'navbarOpen': show }">
+  <nav class="navbar d-flex justify-content-between navbar-expand-sm fixed-top navbar-light transparent" v-bind:class=" { 'navbarOpen': show }">
 
     <!-- logo desktop -->
     <router-link class="router-link-active router-link-exact-active nav-link nav-logo nav-item showOnPC logoOnPC" to="/">
@@ -20,20 +20,18 @@
       <div class="collapse navbar-collapse rightchildText text-align-center" id="navbarSupportedContent" v-bind:class="{ 'show': show }">
         <ul class="navbar-nav hidden-menu myUl text-center" >
           <li class="nav-item active text-align-center">
-            <router-link class="router-link-active router-link-exact-active nav-link myItems" to="/">
+            <router-link class="router-link-active router-link-exact-active nav-link myItems d-flex align-items-center" to="/">
               <span class="mobile-nav-style nav-style">
                 Accueil
                 <div class="underline" :style="$route.path=='/' ? 'width: 100%' : ''"></div>
               </span>
             </router-link>
 
-            
-
             <hr class="showOnPhone myHr">
           </li>
           
           <li class="nav-item" >
-            <router-link class="nav-link text-align-center myItems" target="_blank" to="/carte.pdf">
+            <router-link class="nav-link text-align-center myItems d-flex align-items-center" target="_blank" to="/carte.pdf">
               <span class="mobile-nav-style nav-style">
                 Notre carte
                 <div class="underline"></div>
@@ -43,7 +41,7 @@
           </li>
           
           <li class="nav-item">
-            <router-link class="nav-link text-align-center myItems" to="/contact">
+            <router-link class="nav-link text-align-center myItems d-flex align-items-center" to="/contact">
               <span class="mobile-nav-style nav-style">
                 Réservations
                 <div class="underline" :style="$route.path=='/contact' ? 'width: 100%' : ''"></div>
@@ -53,7 +51,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link class="nav-link text-align-center aProposLink myItems" to="/about">
+            <router-link class="nav-link text-align-center aProposLink myItems d-flex align-items-center" to="/about">
               <span class="mobile-nav-style nav-style">
                 Nous découvrir
                 <div class="underline" :style="$route.path=='/about' ? 'width: 100%' : ''"></div>

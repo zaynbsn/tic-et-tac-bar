@@ -15,7 +15,7 @@ const routes = [{
             path: '/About',
             name: 'About',
             component: () =>
-                import ('../views/About')
+                import ('../views/AboutPage')
         },
         
         {

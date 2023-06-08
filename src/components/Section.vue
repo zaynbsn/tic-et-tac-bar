@@ -34,12 +34,12 @@
 
 <script>
 import { reactive, toRefs, ref } from 'vue'
-import Offer from './Homepage/Offer.vue'
-import Discover from './Homepage/Discover.vue'
-import About from './Homepage/About.vue'
-import Cocktails from './Homepage/Cocktails.vue'
-import Reviews from './Homepage/Reviews.vue'
-import Illustrations from './Homepage/Illustrations.vue'
+import Offer from '@/components/Homepage/Offer.vue'
+import Discover from '@/components/Homepage/Discover.vue'
+import About from '@/components/Homepage/About.vue'
+import Cocktails from '@/components/Homepage/Cocktails.vue'
+import Reviews from '@/components/Homepage/Reviews.vue'
+import Illustrations from '@/components/Homepage/Illustrations.vue'
 import windowWidthMixin from '@/mixins/windowWidthMixin'
 
 export default {

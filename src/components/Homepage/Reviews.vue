@@ -6,6 +6,7 @@
           <div 
             class="shadow heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4" 
             style="border-radius: 30px;"
+            :class="isMobile ? 'mb-3' : ''"
           >
             <div class="d-flex align-items-center justify-content-center fw-bold text-white">
               {{ review.name }}
@@ -36,7 +37,7 @@
 </template>
 
 <script>
-import { reactive, toRefs, ref } from 'vue'
+import { ref } from 'vue'
 import windowWidthMixin from '@/mixins/windowWidthMixin'
 export default {
   name: 'Reviews',
@@ -50,7 +51,7 @@ export default {
       },
       {
         name: 'Robin B',
-        text: "J’ai découvert ce bar par hasard et je peux que le conseiller !! J’ai passé une super moment ! Et les cocktails sont excellents."
+        text: "J’ai découvert ce bar par hasard et je peux que le conseiller !! J’ai vraiment passé un super moment ! Et les cocktails sont excellents."
       },
       {
         name: 'Anais T',

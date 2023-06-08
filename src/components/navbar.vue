@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse rightchildText text-align-center" id="navbarSupportedContent" v-bind:class="{ 'show': show }">
         <ul class="navbar-nav hidden-menu myUl text-center" >
           <li class="nav-item active text-align-center">
-            <router-link class="router-link-active router-link-exact-active nav-link myItems d-flex align-items-center" to="/">
+            <router-link class="router-link-active router-link-exact-active nav-link myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" to="/">
               <span class="mobile-nav-style nav-style">
                 Accueil
                 <div class="underline" :style="$route.path=='/' ? 'width: 100%' : ''"></div>
@@ -31,7 +31,7 @@
           </li>
           
           <li class="nav-item" >
-            <router-link class="nav-link text-align-center myItems d-flex align-items-center" target="_blank" to="/carte.pdf">
+            <router-link class="nav-link text-align-center myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" target="_blank" to="/carte.pdf">
               <span class="mobile-nav-style nav-style">
                 Notre carte
                 <div class="underline"></div>
@@ -41,7 +41,7 @@
           </li>
           
           <li class="nav-item">
-            <router-link class="nav-link text-align-center myItems d-flex align-items-center" to="/contact">
+            <router-link class="nav-link text-align-center myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" to="/contact">
               <span class="mobile-nav-style nav-style">
                 Réservations
                 <div class="underline" :style="$route.path=='/contact' ? 'width: 100%' : ''"></div>
@@ -51,7 +51,7 @@
           </li>
 
           <li v-if="isMobile" class="nav-item">
-            <router-link class="nav-link text-align-center aProposLink myItems d-flex align-items-center" to="/about">
+            <router-link class="nav-link text-align-center aProposLink myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" to="/about">
               <span class="mobile-nav-style nav-style">
                 Nous découvrir
                 <div class="underline" :style="$route.path=='/about' ? 'width: 100%' : ''"></div>

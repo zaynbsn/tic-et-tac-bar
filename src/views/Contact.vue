@@ -1,73 +1,72 @@
 <template>
-  <div class="pt-5 bg-custom">
-    <div class="container-fluid py-5 my-5">
-      <div class="row  text-white">
-          <div class="col-sm fs-4 textJustify">
-              <p>
-              Un afterwork, un anniversaire, un séminaire ou quelque chose à fêter ? Nous vous proposons de réserver sans frais un espace afin d’organiser votre évènement chez Tic & Tac Bar. Pour plus d’informations, n’hésitez pas à nous contacter (en précisant la date et l’heure souhaitées ainsi que le nombre d’invités).
-              </p>
-          </div>
-          <div class="col-sm myEmail ">
-              <a class="textYellowNoDeco fs-1 email" href="mailto:contact@tic-et-tac-bar.fr">contact@tic-et-tac-bar.fr</a>
-                              
-          </div>
+  <div class="container bg-black pt-5 py-5 my-5">
+    <div class="row text-white">
+      <div class="col-sm-6">
+        <Title label="Réservations" centered />
+        <p class="mt-4">
+          Un afterwork, un anniversaire, un séminaire ou quelque chose à fêter ? Nous vous proposons de réserver sans frais un espace afin d’organiser votre évènement chez Tic & Tac Bar. Pour plus d’informations, n’hésitez pas à nous contacter (en précisant la date et l’heure souhaitées ainsi que le nombre d’invités).
+        </p>
       </div>
-    </div>
 
-    <!-- form -->
-    <form action="" class="formFields" @submit.prevent="sendEmail">
-      <div class="name-field">
-        <div class="field">
-          <input type="text" v-model="firstName" placeholder="First Name" />
-        </div>
-        <div class="field">
-          <input type="text" v-model="subject" placeholder="Subject of message" />
-        </div>
-      </div>
+      <div class="col-sm-6">
+        <form action="" class="formFields" @submit.prevent="sendEmail">
+          <div class="name-field">
+            <div class="field">
+              <input type="text" v-model="firstName" placeholder="First Name" />
+            </div>
+            <div class="field">
+              <input type="text" v-model="subject" placeholder="Subject of message" />
+            </div>
+          </div>
       
-      <div class="emaill-field field">
-        <input type="email" v-model="email" placeholder="Enter your Email" />
-      </div>
+          <div class="emaill-field field">
+            <input type="email" v-model="email" placeholder="Enter your Email" />
+          </div>
       
-      <div class="field">
-        <textarea  type="textarea" v-model="message" placeholder="Enter Message" />
+          <div class="field">
+            <textarea  type="textarea" v-model="message" placeholder="Enter Message" />
+          </div>
+          <div class="submimtbutton field">
+            <button type="submit">SUBMIT</button>
+          </div>
+        </form>
+          </div>
+        </div>
       </div>
-      <div class="submimtbutton field">
-        <button type="submit">SUBMIT</button>
-      </div>
-    </form>
-  </div>
+  
   <!-- form -->
 </template>
 
 <script>
 import { reactive, toRefs, watch } from 'vue'
+import Title from '@/components/UI/Title.vue'
 import { Email } from '@/assets/smtp/smtp.js'
 
 export default {
-    name:'Contact',
-    data() {
-      return {
-        firstName: "name test",
-        email: "",
-        subject: "subject test",
-        message: "test smtp",
-      }
-    },
-    methods: {
-      sendEmail() {
-        Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "nils.vainui@gmail.com",
-          Password : "E7AC50FE16DFF9812A2E20D501E42306BBC1",
-          To: "nils.vainui@gmail.com",
-          From: "nilsdraw@gmail.com",
-          Name: this.name,
-          Subject: this.subject,
-          Body: this.message
-        }).then((message) => alert(message))
-      }
+  name:'Contact',
+  components: { Title },
+  data() {
+    return {
+      firstName: "name test",
+      email: "",
+      subject: "subject test",
+      message: "test smtp",
     }
+  },
+  methods: {
+    sendEmail() {
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "nils.vainui@gmail.com",
+        Password : "E7AC50FE16DFF9812A2E20D501E42306BBC1",
+        To: "nils.vainui@gmail.com",
+        From: "nilsdraw@gmail.com",
+        Name: this.name,
+        Subject: this.subject,
+        Body: this.message
+      }).then((message) => alert(message))
+    }
+  }
 }
 </script>
 

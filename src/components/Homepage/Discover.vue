@@ -21,7 +21,7 @@
 
 <script>
 import { reactive, toRefs, ref } from 'vue'
-import Title from '../UI/Title.vue'
+import Title from '@/components/UI/Title.vue'
 import windowWidthMixin from '@/mixins/windowWidthMixin'
 
 export default {

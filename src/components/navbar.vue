@@ -50,7 +50,7 @@
             <hr class="showOnPhone myHr">
           </li>
 
-          <li class="nav-item">
+          <li v-if="isMobile" class="nav-item">
             <router-link class="nav-link text-align-center aProposLink myItems d-flex align-items-center" to="/about">
               <span class="mobile-nav-style nav-style">
                 Nous découvrir
@@ -67,8 +67,10 @@
 
 <script>
 import { reactive,ref, toRefs } from 'vue'
+import windowWidthMixin from '@/mixins/windowWidthMixin'
     export default {
       name:'navbar',
+      mixins: [ windowWidthMixin ],
       props: {
         msg: String
       },

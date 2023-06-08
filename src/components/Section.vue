@@ -19,62 +19,12 @@
             <!-- Cocktails -->
             <Cocktails />
 
-        <!-- Our Quality -->
+            <!-- reviews -->
+            <Reviews />
         </div>
     </div>
 
-    <!-- Coffee Rates -->
-    <div class="container-fluid pt-global mb-5" style="background-color: #99714a">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-center py-4" style="height: fit-content">
-                <div class="col-sm text-white">
-                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
-                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
-                            Maxime M
-                        </div>
-
-                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-
-                        <p class="text-white" style="font-size: 0.85rem">Bar super sympas avec des barmans au top, très accueillant. Des très bons cocktails et bières pour des prix tout à fait abordables.</p>
-                    </div>
-                </div>
-                <div class="col-sm text-white">
-                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
-                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
-                            Robin B
-                        </div>
-
-                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-
-                        <p class="text-white" style="font-size: 0.85rem">J’ai découvert ce bar par hasard et je peux que le conseiller !!
-                            J’ai passé une super moment ! Et les cocktails sont excellents.</p>
-                    </div>
-                </div>
-                <div class="col-sm text-white">
-                    <div class="shadow rounded1 heightAvis text-white bg-black d-flex flex-column justify-content-around align-items-start py-3 px-4">
-                        <div class="d-flex align-items-center justify-content-center fw-bold text-white">
-                            Anais T
-                        </div>
-
-                        <h2 class="rounded-circle badge fs-6" style="margin-left: -0.7rem; color: #ff8000"><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /><fa :icon="['fas','star']" class="" /></h2>
-
-                        <p class="text-white" style="font-size: 0.85rem">Des cocktails qui sortent de l'ordinaire, des barmans passionnés et soucieux de leur clientèle. Je reviendrai sans hésiter !</p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="container">
-                        <div class="d-flex justify-content-center">
-                            <div class="pt-4 text-center">
-                                <h3 class="text-black fw-bold">Du lundi au samedi de 16h30 à 00h30</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Coffee Rates -->
+    <!-- Google maps -->
     <div class="container-fluid bg-black pt-global mapBar">
             <div class="container pb-3">
                 <iframe class="h-100 w-100 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11136.715939471307!2d4.8387141!3d45.7475576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7d9e819e2b%3A0xcf8fb327d3b9188a!2sTIC%20%26%20TAC%20BAR!5e0!3m2!1sen!2sfr!4v1682035826407!5m2!1sen!2sfr"    allowfullscreen="" loading="lazy"></iframe>
@@ -88,12 +38,13 @@ import Offer from './Homepage/Offer.vue'
 import Discover from './Homepage/Discover.vue'
 import About from './Homepage/About.vue'
 import Cocktails from './Homepage/Cocktails.vue'
+import Reviews from './Homepage/Reviews.vue'
 import Illustrations from './Homepage/Illustrations.vue'
 import windowWidthMixin from '@/mixins/windowWidthMixin'
 
 export default {
     name:'Section',
-    components: { Offer, Discover, About, Cocktails, Illustrations },
+    components: { Offer, Discover, About, Cocktails, Illustrations, Reviews },
     mixins: [windowWidthMixin],
     setup(){
         let photos=reactive({
@@ -119,84 +70,9 @@ export default {
     src: local("Noto Sans"),
     url(@/assets/fonts/NotoSans-Regular.ttf) format("truetype");
 }
-.mt-global{
-    padding-top: 500px;
-}
-
-.yeltitle{
-    color: #F6A424;  
-    font-size:3.5em;
-}
-
-.yeltitlelower{
-    color: #F6A424;  
-    font-size:2.5em;
-}
-.rc{
-    font-size: 100px;
-    color: #F6A424;  
-}
-.yellow-hover:hover{
-    background-color:#F6A424 ;
-    color: #fff;
-}
-//color: #161228;
-.dark-hover:hover{
-    background-color: #fff;
-    color: #F6A424;
-}
-
-.smPhone{
-    justify-content:center;
-}
-.text-2A{
-    color: #0000;
-}
-.bg-yellow{
-    background: #F6A424;
-}
-.text-yellow{
-    color: #F6A424;
-}
-.Computercard{
-    width: 60%;
-    margin-left:19%;
-    background-color: black;
-    border-color : #F6A424;
-    text-align: justify;
-    text-justify: inter-word;
-    
-}
-// .card{
-//     border: solid 3px #F6A424!important;
-//     border-color : #F6A424!important;
-// }
-
-// .textJustify{
-//     text-align: justify;
-//     text-justify: inter-word;
-// }
 ul li{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.rounded1{
-    border-radius: 30px;
-}
-.bg-other1{
-    background-color: #fff;
-}
-.h-small{
-    background-size: cover;
-}
-.card-title{
-    color: #F6A424;
-}
-
-// .qualityParag{
-//     text-align: justify;
-// }
-
-
 .svg-down {
     bottom: 8px;
     left: calc(50% - 96px);
@@ -217,146 +93,16 @@ ul li{
     background: url("../assets/icons/arrowDownWhite.svg") no-repeat center;
     background-size: contain;
 }
-.myCardsDiscover{
-    margin:0 auto;
-    padding:10px;
-    padding-top:0px;
-    height:200px;
-}
-
-.marginDiscoverCardTitle{
-    margin-left:25%;
-}
-.paddingDiscoverCardTitle{
-    padding-left:20%;
-}
-
-.heightAvis{
-    height:216px;
-}
-.card-title{
-    color : #F6A424!important;
-}
-
-.cardCarrou{
-    height:100%;
-    overflow: hidden;
-    padding:2px;
-}
-
-.carousel-control-prev{
-    height:100%;
-}
-
-.showOnPhone{
-        display:none!important;
-    }
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-
-}
-
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-
-}
 
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
-    .myH2{
-        font-size:1.7em;
-        padding: 0px!important;
-    }
-    .showOnPC{
-        display:none;
-    }
-    .myCardsDiscover{
-        height:10%;
-        margin-top:0!important;
-        padding-top:5px!important;
-        margin-bottom:5px!important;
-        padding-bottom:5px!important;
-        text-align: left!important;
-        width:450px;
-        text-align: left;
-    }
-    .paddingDiscoverCardTitle {
-        padding-left:15px;
-        text-align: left;
-        color:white;
-    }
-    .marginDiscoverCardTitle{
-        margin:0;
-        text-align: left;
-    }
-
-    .smPhone{
-        justify-content: start;
-        text-align: left;
-    }
-    .textJustifyLeft{
-        
-        text-align: left;
-    }
-
-    .cardInspi{
-        margin:0!important;
-        width:100%;
-    }
-    .showOnPhone{
-        display: block!important;;
-    }
-    
-    .showOnPC{
-        display:none;
-    }
-
-    .cardCarrou2{
-        width:50%;
-    }
-    .myCardsDiscover{
-        width:90%!important;
-    }
 
     html{
         margin:0;
         padding:0;
         overflow: hidden;
     }
-    .card-title{
-        font-size:2em!important;
-    }
-}
-
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-and (orientation: landscape) {
-
-}
-/* For PC */
-@media screen and (min-device-width: 720px){
-
-}
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-   
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px)
-and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 </style>

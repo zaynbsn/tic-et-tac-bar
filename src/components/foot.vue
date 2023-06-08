@@ -1,28 +1,35 @@
 <template>
     
-    <div class="bg-other ">
+    <div class="bg-other">
         <div class="container pt-3 myContainerToEnlarge">
             <div class="row text-white text-center mt-6 pt-3 myContainerToEnlarge">
                 <div class="col-sm">
-                    <h3 class="text-yellow mt-3">Adresse</h3>
-                        <a class="text-white text-decoration-none text-yellow" target="_blank" href="https://goo.gl/maps/cFoXf1NKT4SvT6Fn8">
-                            <p>135 Rue Sébastien Gryphe</p>
+                    <h3 class="text-yellow mt-3 ">Adresse</h3>
+                    <p class="text-break">
+                        <a class="text-white text-decoration-none text-yellow" href="mailto:contact@tic-et-tac-bar.fr">
+                            135 Rue Sébastien Gryphe
                         </a>
+                    </p>
                     <p>69007 LYON</p>
                 </div>
                 <div class="col-sm">
-                    <h3 class="text-yellow">Contact</h3>
+                    <h3 class="text-yellow mt-3">Contact</h3>
                     <address>
-                        <p class="text-break"><a class="text-white ms-2 text-decoration-none text-yellow" href="mailto:contact@tic-et-tac-bar.fr">contact@tic-et-tac-bar.fr</a></p> 
+                        <p class="text-break">
+                            <a class="text-white text-decoration-none text-yellow" href="mailto:contact@tic-et-tac-bar.fr">
+                                contact@tic-et-tac-bar.fr
+                            </a>
+                        </p> 
                     </address>
                 </div>
-                <div class="col-sm">
-                    <h3 class="text-yellow">Horaires</h3>
+                <div class="col-sm ">
+                    <h3 class="text-yellow mt-3">Horaires</h3>
                     <p>Lundi - Samedi</p>
                     <p>16h30 à 00h30</p>
                 </div>
                 
             </div>
+            <hr style="color: white">
             <div class="container-fuiled">
                 <!-- row -->
                 <div class="row">
@@ -35,7 +42,7 @@
                     </div>
                     <!-- links column -->
                     <div class="col-sm text-white text-center fs-3">
-                        <div class="row myIcons">
+                        <div class="d-flex justify-content-around align-items-center">
                             <div class="col-sm-6">
                                 <!-- Instagram link -->
                                 <a class="text-white text-decoration-none" href="https://www.instagram.com/tic.et.tac.bar/"><fa :icon="['fab','instagram']" class="text-yellow" /></a>
@@ -49,8 +56,7 @@
                     <!-- Privacy Policy link and Terms Condition link column -->
                     <div class="col-sm p-3  text-white text-center">
                         <div class="col">
-                        <a href="javascript:void(0)" class="text-decoration-none text-white pe-3">Menu </a>
-                        <a href="javascript:void(0)" class="text-decoration-none text-white ps-3"> Autre lien</a>
+                        <a href="/carte.pdf" class="text-decoration-none text-white pe-3" target="_blank">Menu </a>
                         </div>
                     </div>
                 </div>

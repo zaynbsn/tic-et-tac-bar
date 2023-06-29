@@ -24,7 +24,7 @@ export default {
   mixins: [windowWidthMixin],
   setup() {
     let photos = reactive({
-      Cocktail1:require('@/assets/img/cocktail1.png'),
+      Cocktail1:require('@/assets/img/cocktail7.png'),
       Cocktail2:require('@/assets/img/cocktail2.png'),
       Cocktail3:require('@/assets/img/cocktail3.png'),
       Cocktail4:require('@/assets/img/cocktail4.png'),
@@ -33,10 +33,7 @@ export default {
     })
 
     const cocktails = ref([
-      {
-        src: photos.Cocktail1,
-        alt: 'cocktail image'
-      },
+      
       {
         src: photos.Cocktail2,
         alt: 'cocktail image'
@@ -55,6 +52,10 @@ export default {
       },
       {
         src: photos.Cocktail6,
+        alt: 'cocktail image'
+      },
+      {
+        src: photos.Cocktail1,
         alt: 'cocktail image'
       },
     ])

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid pt-global mb-5" style="background-color: white">
+  <div class="container-fluid pt-global mb-5" style="background-color: rgba(255, 255, 255, 0.9)">
     <div class="container">
       <div class="row d-flex justify-content-center align-items-center py-4" style="height: fit-content">
         <div v-for="(review, index) in reviews" :key="index" class="col-sm text-white">

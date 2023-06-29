@@ -43,7 +43,7 @@
                     <!-- links column -->
                     <div class="col-sm text-white text-center fs-3">
                         <div class="d-flex justify-content-around align-items-center">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-7">
                                 <!-- Instagram link -->
                                 <a class="text-white text-decoration-none" href="https://www.instagram.com/tic.et.tac.bar/"><fa :icon="['fab','instagram']" class="text-yellow" /></a>
                                 <!-- Google map link-->
@@ -56,7 +56,7 @@
                     <!-- Privacy Policy link and Terms Condition link column -->
                     <div class="col-sm p-3  text-white text-center">
                         <div class="col">
-                        <a href="/carte.pdf" class="text-decoration-none text-white pe-3" target="_blank">Menu </a>
+                        <a href="/carte.pdf" class="text-decoration-none text-white pe-1" target="_blank">Menu </a>
                         </div>
                     </div>
                 </div>

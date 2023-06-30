@@ -74,12 +74,9 @@ ul li{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .svg-down {
-    bottom: 8px;
-    left: calc(50% - 96px);
-    position: absolute;
     z-index: 5;
-    margin-left: 0;
-    margin-bottom: -3px;
+    margin-left: calc(50% - 96px);
+    margin-top: -68px;
     color: #fff;
 }
 .arrow-down{
@@ -87,7 +84,7 @@ ul li{
     position: relative;
     height: 32px;
     left: 50%;
-    bottom: 36px;
+    bottom: 56px;
     transform: translate(-50%, 0);
     z-index: 10;
     background: url("../assets/icons/arrowDownWhite.svg") no-repeat center;

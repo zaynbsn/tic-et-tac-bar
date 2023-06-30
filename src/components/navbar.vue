@@ -31,12 +31,12 @@
           </li>
           
           <li class="nav-item" >
-            <router-link class="nav-link text-align-center myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" target="_blank" to="/carte.pdf">
+            <a class="nav-link text-align-center myItems" :class="!isMobile ? 'd-flex align-items-center' : ''" target="_blank" href="https://tic-et-tac-bar.fr/carte.pdf">
               <span class="mobile-nav-style nav-style">
                 Notre carte
                 <div class="underline"></div>
               </span>
-            </router-link>
+            </a>
             <hr class="showOnPhone myHr">
           </li>
           

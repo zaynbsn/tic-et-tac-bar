@@ -25,7 +25,7 @@
           </div>
 
           <div class="row my-2">
-            <Button to="/carte.pdf" label="Notre carte" blank />
+            <Button to="https://tic-et-tac-bar.fr/carte.pdf" label="Notre carte" blank />
           </div>
         </div>
       </div>

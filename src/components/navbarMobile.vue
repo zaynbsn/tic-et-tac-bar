@@ -16,7 +16,7 @@
       <transition>
         <div v-if="isNavbarMobileOpen">
           <router-link v-if="isNavbarMobileOpen" to="/" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Accueil</router-link>
-          <router-link v-if="isNavbarMobileOpen" to="/carte.pdf" target="_blank" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Notre carte</router-link>
+          <a v-if="isNavbarMobileOpen" href="https://tic-et-tac-bar.fr/carte.pdf" target="_blank" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Notre carte</a>
           <router-link v-if="isNavbarMobileOpen" to="/contact" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Réservations</router-link>
           <router-link v-if="isNavbarMobileOpen" to="/about" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Nous découvrir</router-link>
         </div>

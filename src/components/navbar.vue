@@ -114,6 +114,9 @@ ul a:hover {
 ul a:hover .underline{
     width: 100%;
 }
+ul a:focus{
+    color: white;
+}
 
 .bg-ttblack {
     background-color: #fff

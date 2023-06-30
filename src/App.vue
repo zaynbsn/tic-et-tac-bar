@@ -9,6 +9,9 @@
 html{
   background-color: #000;
 }
+html, body{
+  overflow-x: hidden;
+}
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),

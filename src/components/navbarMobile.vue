@@ -1,5 +1,5 @@
 <template>
-  <section class="container" style="position: absolute; background-color: rgba(0,0,0,0.95);">
+  <section class="container" style="position: absolute; top:0; left:0; background-color: rgba(0,0,0,0.95);">
     <div class="nav-container d-flex justify-content-between align-items-center p-4" >
       <router-link class="logo" to="/">
         <img :src="usedlogo" alt="tic&tac logo" style="width:100px">
@@ -15,10 +15,10 @@
     <div v-if="isMobile" class="d-flex flex-column justify-content-center align-items-center" :class="isNavbarMobileOpen ? 'nav-mobile-on p-4' : 'nav-mobile-off'">
       <transition>
         <div v-if="isNavbarMobileOpen">
-          <router-link v-if="isNavbarMobileOpen" to="/" class="link mb-3" >Accueil</router-link>
-          <router-link v-if="isNavbarMobileOpen" to="/carte.pdf" target="_blank" class="link mb-3">Notre carte</router-link>
-          <router-link v-if="isNavbarMobileOpen" to="/contact" class="link mb-3">Réservations</router-link>
-          <router-link v-if="isNavbarMobileOpen" to="/about" class="link mb-3">Nous découvrir</router-link>
+          <router-link v-if="isNavbarMobileOpen" to="/" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Accueil</router-link>
+          <router-link v-if="isNavbarMobileOpen" to="/carte.pdf" target="_blank" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Notre carte</router-link>
+          <router-link v-if="isNavbarMobileOpen" to="/contact" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Réservations</router-link>
+          <router-link v-if="isNavbarMobileOpen" to="/about" class="link mb-3" @click="isNavbarMobileOpen = !isNavbarMobileOpen">Nous découvrir</router-link>
         </div>
         
       </transition>

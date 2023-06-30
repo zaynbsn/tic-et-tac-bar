@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
 
-        <Title label="Nous découvrir" centered />
+        <Title label="Nous découvrir" centered></Title>
 
         <div class="discover-text mt-4" style="width: 75%;">
-          <p v-for="(text, index) in texts" :key="index" class="fs-6 text-light qualityParag textJustify" >
+          <p v-for="(text, index) in texts" :key="index" class="text-light qualityParag textJustify" style="font-size: 16px;" >
               {{ text }}
           </p>
         </div>
@@ -34,11 +34,11 @@ export default {
     })
 
     const texts = ref([
-      'Le bar Tic & Tac est un bar à cocktails et bières situé au cœur de la place Jules Guesdes dans le septième arrondissement de Lyon. Nous aurons le plaisir de vous accueillir dans un lieu chaleureux disposant de deux salles aux ambiances complètement différentes.',
-      'Le bar Tic & Tac propose une large gamme de cocktails classiques et originaux dont la plupart sont réalisés à partir de liqueurs maison. Un de ces cocktails, l’Élixir de jouvence, a été élaboré en exclusivité pour le bar Tic & Tac par un Meilleur Ouvrier de France barman.',
-      'Le bar Tic & Tac, c’est également un important choix de bières artisanales et régionales. Que ce soit en pression ou en bouteille, vous trouverez sans aucun doute une bière qui saura satisfaire vos papilles.',
-      'En cas de creux, Tic & Tac a également pensé à vous. Vous pourrez déguster de copieuses planches à partager élaborées à base de charcuteries, de fromages et de tartinades locaux.',
-      'Dès les premiers beaux jours, vous pourrez également profiter de notre belle terrasse.',
+      'Bienvenue au bar Tic & Tac, un établissement incontournable situé au cœur de la place Jules Guesdes, dans le septième arrondissement de Lyon. Notre bar à cocktails et bières vous invite à découvrir ses deux salles au charme unique.',
+      "Le bar Tic & Tac vous propose une vaste sélection de cocktails classiques et originaux, préparés avec soin à partir de liqueurs maison. Ne manquez pas l'Élixir de jouvence, un cocktail exclusif créé spécialement pour notre établissement par un talentueux Meilleur Ouvrier de France barman.",
+      'En plus de nos délicieux cocktails, nous vous offrons un choix varié de bières artisanales et régionales, disponibles en pression ou en bouteille. Quelles que soient vos préférences, nous avons certainement une bière qui saura ravir vos papilles.',
+      'Et si vous avez une petite faim, ne vous inquiétez pas ! Tic & Tac a pensé à tout. Dégustez nos généreuses planches à partager, préparées avec des charcuteries, des fromages et des tartinades locales, pour une expérience culinaire savoureuse.',
+      "Dès l'arrivée des beaux jours, ne manquez pas l'occasion de profiter de notre magnifique terrasse, où vous pourrez vous détendre et vous imprégner de l'atmosphère animée de la place Jules Guesdes.",
     ])
 
     

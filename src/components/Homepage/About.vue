@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-8 d-flex flex-column justify-content-center align-items-center">
         
-        <Title label="Nous concernant" centered/>
+        <Title label="Nous concernant" centered></Title>
         
         <div class="about-text mt-4" style="width: 75%;">
           <p v-for="(text, index) in texts" :key="index" class="fs-6 text-light qualityParag textJustify" >
@@ -39,9 +39,9 @@ export default {
     })
 
     const texts = ref([
-      'Le projet du bar Tic & Tac est né au détour d’une discussion en 2018. Il est le fruit de notre rencontre, Théo et Carl, sur les bancs de la fac.',
+      "L'histoire du bar Tic & Tac prend sa source lors d'une conversation spontanée en 2018. C'est là que Théo et Carl, deux amis inséparables rencontrés sur les bancs de la fac, ont donné naissance à ce projet.",
       'Littéralement indissociables, tout le monde nous appelait « Tic & Tac ». Nous avons donc naturellement choisi par la suite de nommer notre bar ainsi.',
-      'Initialement prévu à Valence en Espagne, c’est bien à Lyon que nous avons finalement décidé d’ouvrir notre premier bar.',
+      "Bien que notre intention initiale était d'ouvrir le bar à Valence, en Espagne, nous avons finalement choisi Lyon comme lieu d'implantation pour notre tout premier établissement.",
       'Nous avons mis dans ce dernier les ingrédients résultant de tous les moments que nous avons partagés à deux comme nos nombreux voyages. C’est un bar à notre image, à celle de Tic & Tac.'
     ])
 

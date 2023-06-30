@@ -94,11 +94,11 @@ export default {
 }
 
 .bg-yellow{
-    background-color: #f6a424
+    background-color: #ff8000
 }
 
 .text-yellow{
-    color: #f6a424
+    color: #ff8000
 }
 
 /* For Desktop View */

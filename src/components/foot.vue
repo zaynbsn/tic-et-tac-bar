@@ -41,9 +41,9 @@
                         </div>
                     </div>
                     <!-- links column -->
-                    <div class="col-sm text-white text-center fs-3">
+                    <div class="col-sm text-white text-center fs-3" :class="!isMobile ? 'row' : ''">
                         <div class="d-flex justify-content-around align-items-center">
-                            <div class="col-sm-6 col-7">
+                            <div class="col-sm-6 col-8">
                                 <!-- Instagram link -->
                                 <a class="text-white text-decoration-none" href="https://www.instagram.com/tic.et.tac.bar/"><fa :icon="['fab','instagram']" class="text-yellow" /></a>
                                 <!-- Google map link-->
@@ -67,16 +67,19 @@
 
 <script>
 import { ref } from 'vue'
-    export default {
-        name:'foot',
-        setup(){
-            //Copyright Date
-            const date=ref(new Date().getFullYear())
-            return{
-                date
-            }
+import windowWidthMixin from '@/mixins/windowWidthMixin'
+
+export default {
+    name:'foot',
+    mixins: [windowWidthMixin],
+    setup(){
+        //Copyright Date
+        const date=ref(new Date().getFullYear())
+        return{
+            date
         }
     }
+}
 </script>
 
 <style scoped>
